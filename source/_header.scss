@@ -1,8 +1,13 @@
   .header{
-      nav{
-          padding: 24px;
-         
-      }
+    
+    nav{
+      position: relative;
+      padding-top: 1.25rem ;
+      padding-bottom:1.25rem ;
+      background-color: $White;
+  
+
+    }
       &__logo{
          
    
@@ -86,11 +91,12 @@
     }
 }
 .overlay {
+  margin-top: 30px;
   transition: all 0.4s ease-in-out;
   z-index: -2;
   opacity: 0;
   position: fixed;
-  top: 110px;
+  top:0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -98,4 +104,24 @@
 }
 .overlay-open{
   opacity: 1;
+}
+.header__smallmenu{
+  transition: all 150ms ease-in-out;
+  position :absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1.625rem;
+  flex-direction: column;
+  background-color: $White;
+  height: 300px;
+  a{
+    display: block;
+    text-align: center;
+    padding: 0.625rem;
+    color:$DarkBlue
+  }
 }

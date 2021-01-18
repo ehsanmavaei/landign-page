@@ -28,6 +28,11 @@
           align-items: center;
 }
 
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -38,6 +43,19 @@
   .hide-for-desktop {
     display: none;
   }
+}
+
+.hasfade {
+  visibility: hidden;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.noscroll {
+  overflow: hidden;
 }
 
 *, *::before, *::after {
@@ -56,7 +74,10 @@ a {
 }
 
 .header nav {
-  padding: 24px;
+  position: relative;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: white;
 }
 
 .header__menu > span {
@@ -132,12 +153,13 @@ a {
 }
 
 .overlay {
+  margin-top: 30px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   z-index: -2;
   opacity: 0;
   position: fixed;
-  top: 110px;
+  top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -147,6 +169,33 @@ a {
 
 .overlay-open {
   opacity: 1;
+}
+
+.header__smallmenu {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1.625rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  height: 300px;
+}
+
+.header__smallmenu a {
+  display: block;
+  text-align: center;
+  padding: 0.625rem;
+  color: #2d314d;
 }
 
 html {
@@ -173,7 +222,10 @@ button, .button {
 }
 
 .header nav {
-  padding: 24px;
+  position: relative;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: white;
 }
 
 .header__menu > span {
@@ -249,12 +301,13 @@ button, .button {
 }
 
 .overlay {
+  margin-top: 30px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   z-index: -2;
   opacity: 0;
   position: fixed;
-  top: 110px;
+  top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -264,5 +317,32 @@ button, .button {
 
 .overlay-open {
   opacity: 1;
+}
+
+.header__smallmenu {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1.625rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  height: 300px;
+}
+
+.header__smallmenu a {
+  display: block;
+  text-align: center;
+  padding: 0.625rem;
+  color: #2d314d;
 }
 /*# sourceMappingURL=style.css.map */
