@@ -19,14 +19,46 @@
             }
         }
       }
-      &__links{
-          a{
-              font-size:0.875rem;
-              color: $GrayishBlue;
+      &__links {
+
+        a {
+          position: relative;
+          font-size: $font-md;
+          color: $GrayishBlue;
+          transition: color 300ms ease-in-out;
+    
+          &:not(:last-child){
+            margin-right: 32px;
           }
+    
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 2px;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            background: linear-gradient(to right, $red, brown);
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+          }
+          &:hover {
+            color: $DarkBlue;
+    
+            &::before {
+              opacity: 1;
+            }
+          }
+        }
+    
+     
       }
       &__cta{
-          font-size:$font-sm ;
-      }
-
-  }
+        font-size:$font-md ;
+        transition: all 200ms ease-in-out;
+        &:hover{
+         opacity: 0.8;
+        }
+    }
+}
