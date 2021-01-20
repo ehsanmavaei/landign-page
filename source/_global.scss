@@ -12,6 +12,9 @@ body{
     font-size: $font-md;
     font-weight: 300;
     color: $GrayishBlue;
+    // @include breakpoint-up(large){
+    //     font-size: $font-lg;
+    // }
    
 }
 
@@ -26,6 +29,7 @@ button ,.button{
     font-weight: 400;
     border-radius:50px ;
     cursor: pointer;
+   
 
 }
 
