@@ -615,4 +615,57 @@ button, .button {
   font-size: 0.875rem;
   line-height: 1.5;
 }
+
+.latest__caption {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 40em) {
+  .latest__grid {
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .latest__grid {
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+.latest__item img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.latest__item p:first-of-type {
+  font-size: 0.875rem;
+  padding-top: 10px;
+}
+
+.latest__item h4 {
+  color: #2d314d;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 40em) {
+  .latest__item h4 {
+    font-size: 1.25rem;
+  }
+}
+
+.latest__item p:last-of-type {
+  line-height: 1.5;
+}
 /*# sourceMappingURL=style.css.map */
