@@ -17,7 +17,7 @@
     &__image{
          position: relative;
          z-index: -10;
-         background-image: url('/images/bg-intro-mobile.svg');
+         background-image: url('images/bg-intro-mobile.svg');
          background-repeat: no-repeat;
          background-position: center center;
          background-size: cover;
@@ -27,7 +27,7 @@
             flex: 3;
             order: 2;
             height: 41rem;
-         background-image: url('/images/bg-intro-desktop.svg');
+         background-image: url('images/bg-intro-desktop.svg');
 
         }
 
@@ -38,7 +38,7 @@
              position: absolute;
              left: 0;
              right: 0;
-             background-image: url('/images/file.png');
+             background-image: url('images/file.png');
              background-repeat: no-repeat;
              background-position: center center;
              background-size: 100%;
